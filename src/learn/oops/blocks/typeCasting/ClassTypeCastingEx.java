@@ -24,5 +24,23 @@ public class ClassTypeCastingEx {
 		
 //		Child obj2 = new Parent();
 //		obj2.m4();
+		
+		System.out.println("--------------");
+		
+		Child obj2 = (Child) obj;//down casting
+		obj2.m1();
+		obj2.m2();
+		obj2.m3();
+		obj2.m4();
+		
+		System.out.println("---------------");
+		
+		Parent p1 = new Parent();
+		
+		if (p1 instanceof Child) {
+			Child c1 = (Child) p1;
+			c1.m1();
+		}
+		
 	}
 }
