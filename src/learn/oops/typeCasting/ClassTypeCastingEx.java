@@ -1,4 +1,4 @@
-package learn.oops.blocks.typeCasting;
+package learn.oops.typeCasting;
 
 public class ClassTypeCastingEx {
 	public static void main(String[] args) {
@@ -42,5 +42,14 @@ public class ClassTypeCastingEx {
 			c1.m1();
 		}
 		
+		sample(new Parent()); //Parent obj = new Parent();
+		sample(new Child());  //Parent obj = new Child();
+		
+	}
+	
+	public static void sample(Parent obj) {
+		if (obj instanceof Child) {
+			Child c = (Child) obj;
+		}
 	}
 }

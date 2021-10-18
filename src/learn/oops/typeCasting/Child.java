@@ -1,4 +1,4 @@
-package learn.oops.blocks.typeCasting;
+package learn.oops.typeCasting;
 
 public class Child extends Parent {
 	public void m1() {
