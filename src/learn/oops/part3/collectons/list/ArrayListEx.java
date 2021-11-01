@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
+import learn.oops.encapsulation.Employee;
+
 public class ArrayListEx {
 	public static void main(String[] args) {
 		
@@ -114,6 +116,15 @@ public class ArrayListEx {
 		List subList = list.subList(2, 5);
 		
 		printList(subList);
+		
+		Employee obj = new Employee();
+		obj.setId(1);
+		obj.setName("Uday");
+		obj.setSalary(87687);
+		
+		list.add(obj);
+		
+		printList(list);
 	}
 	
 	private static void printList(List list) {
