@@ -1,12 +1,13 @@
-package learn.oops.part3.collectons.set;
+package learn.oops.part3.collectons.set.primitive;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
-public class HashSetEx {
+public class LinkedHashSetEx {
 	public static void main(String[] args) {
-		Set set = new HashSet();
+		Set set = new LinkedHashSet();
 		set.add(10);
 		set.add(30);
 		set.add("Harish");

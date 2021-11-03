@@ -1,4 +1,4 @@
-package learn.oops.part3.collectons.set;
+package learn.oops.part3.collectons.set.primitive;
 
 import java.util.Set;
 import java.util.TreeSet;
