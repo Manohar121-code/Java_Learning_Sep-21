@@ -1,6 +1,6 @@
 package learn.oops.part3.collectons.set.nonPrimitive;
 
-public class Student {
+public class Student implements Comparable<Student> {
 	private int id;
 	private String name;
 	private int age;
@@ -67,6 +67,17 @@ public class Student {
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", age=" + age + "]";
+	}
+
+	@Override
+	public int compareTo(Student o) {
+		if (this.getId() > o.getId()) {
+			return 1;
+		} else if (this.getId() < o.getId()) {
+			return -1;
+		} else {
+			return 0;
+		}
 	}
 
 }

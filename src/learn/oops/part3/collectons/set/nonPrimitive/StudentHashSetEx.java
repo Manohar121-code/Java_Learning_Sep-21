@@ -3,7 +3,7 @@ package learn.oops.part3.collectons.set.nonPrimitive;
 import java.util.HashSet;
 import java.util.Set;
 
-public class StudentSetEx {
+public class StudentHashSetEx {
 	public static void main(String[] args) {
 		Set<Student> set = new HashSet<Student>();
 		
